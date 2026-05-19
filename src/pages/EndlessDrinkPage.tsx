@@ -1,8 +1,21 @@
+import { useEffect } from "react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, GlassWater, Sparkles, CheckCircle2 } from "lucide-react";
 
 export default function EndlessDrinkPage() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-med-white font-sans text-aegean-blue selection:bg-premium-gold/30">
       {/* Navigation */}
@@ -75,20 +88,26 @@ export default function EndlessDrinkPage() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-aegean-blue p-1 luxury-shadow rounded-sm h-full flex flex-col"
+            className="bg-aegean-blue p-1 luxury-shadow rounded-sm h-full flex flex-col min-h-[800px]"
           >
-            <div className="bg-white p-8 md:p-10 flex-1 flex flex-col justify-center items-center text-center">
-              {/* GO HIGH LEVEL INTEGRATION POINT */}
-              {/* Hier können Sie Ihren GHL Form Embed Code einfügen */}
-              <div id="ghl-form-container" className="w-full min-h-[400px] flex flex-col items-center justify-center border-2 border-dashed border-sand-beige/30 rounded-lg p-6">
-                <div className="w-12 h-12 bg-aegean-blue/5 rounded-full flex items-center justify-center mb-4">
-                  <CheckCircle2 className="text-premium-gold/30" size={24} />
-                </div>
-                <h4 className="text-lg font-serif font-bold text-aegean-blue mb-4">Hier wird Ihr Formular erscheinen</h4>
-                <p className="text-xs text-aegean-blue/40 leading-relaxed max-w-[240px]">
-                  Fügen Sie Ihren <strong>Go High Level Embed Code</strong> in dieses Feld ein, um die Daten Ihrer Gäste zu erfassen.
-                </p>
-              </div>
+            <div className="bg-white flex-1 flex flex-col">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/wq7S1XgxaGF7OZ6zOufg"
+                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '4px' }}
+                id="inline-wq7S1XgxaGF7OZ6zOufg" 
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="ouzo"
+                data-height="775"
+                data-layout-iframe-id="inline-wq7S1XgxaGF7OZ6zOufg"
+                data-form-id="wq7S1XgxaGF7OZ6zOufg"
+                title="ouzo"
+              ></iframe>
             </div>
           </motion.div>
         </div>
