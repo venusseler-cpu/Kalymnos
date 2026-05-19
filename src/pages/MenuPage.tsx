@@ -166,7 +166,7 @@ export default function MenuPage() {
           </Link>
           <div className="flex flex-col items-center">
             <h1 className="font-serif text-2xl tracking-tighter leading-none font-bold">Kalymnos</h1>
-            <span className="text-[8px] mt-1 opacity-60 tracking-widest font-bold">THE KITCHEN</span>
+            <span className="text-[8px] mt-1 opacity-60 tracking-widest font-bold">UNSERE KÜCHE</span>
           </div>
           <div className="w-24 hidden md:block" /> {/* Spacer */}
         </div>
@@ -196,7 +196,7 @@ export default function MenuPage() {
             className="flex justify-center items-center gap-4 text-aegean-blue/40"
           >
             <div className="h-px w-8 bg-premium-gold/30"></div>
-            <p className="italic text-lg font-serif">A tradition of excellence since 1993</p>
+            <p className="italic text-lg font-serif">Exzellenz aus Tradition seit 1993</p>
             <div className="h-px w-8 bg-premium-gold/30"></div>
           </motion.div>
         </header>
@@ -289,11 +289,11 @@ export default function MenuPage() {
             <div className="space-y-6 text-sm">
               <div className="flex gap-4">
                 <MapPin className="text-premium-gold shrink-0" size={18} />
-                <p>Am Wall 123-125<br />28195 Bremen</p>
+                <p>Grambker Dorfstraße 2<br />28719 Bremen, Deutschland</p>
               </div>
               <div className="flex gap-4">
                 <Phone className="text-premium-gold shrink-0" size={18} />
-                <p>+49 (0) 421 123 456 78</p>
+                <p>+49 (0) 421 644 04 24</p>
               </div>
             </div>
           </div>

@@ -117,23 +117,23 @@ export default function HomePage() {
       >
         <div className={`max-w-7xl mx-auto px-6 flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.25em] ${isScrolled ? 'text-aegean-blue' : 'text-med-white'}`}>
           <div className="hidden lg:flex gap-10 items-center">
-            <a href="#about" className="hover:text-premium-gold transition-colors duration-300">Experience</a>
-            <Link to="/menu" className="hover:text-premium-gold transition-colors duration-300">The Kitchen</Link>
-            <a href="#gallery" className="hover:text-premium-gold transition-colors duration-300">Story</a>
+            <a href="#about" className="hover:text-premium-gold transition-colors duration-300">Erlebnis</a>
+            <Link to="/menu" className="hover:text-premium-gold transition-colors duration-300">Unsere Küche</Link>
+            <a href="#gallery" className="hover:text-premium-gold transition-colors duration-300">Geschichte</a>
           </div>
 
           <div className="flex flex-col items-center">
             <h1 className={`font-serif text-3xl md:text-4xl tracking-tighter normal-case leading-none font-bold ${isScrolled ? 'text-aegean-blue' : 'text-med-white'}`}>
               Kalymnos
             </h1>
-            <span className={`text-[8px] mt-1.5 opacity-60 ${isScrolled ? 'text-aegean-blue' : 'text-med-white'}`}>THE FINE GREEK KITCHEN</span>
+            <span className={`text-[8px] mt-1.5 opacity-60 ${isScrolled ? 'text-aegean-blue' : 'text-med-white'}`}>FEINE GRIECHISCHE KÜCHE</span>
           </div>
 
           <div className="hidden lg:flex gap-10 items-center">
-            <a href="#reviews" className="hover:text-premium-gold transition-colors duration-300">Reviews</a>
-            <a href="#contact" className="hover:text-premium-gold transition-colors duration-300">Contact</a>
+            <a href="#reviews" className="hover:text-premium-gold transition-colors duration-300">Bewertungen</a>
+            <a href="#contact" className="hover:text-premium-gold transition-colors duration-300">Kontakt</a>
             <button className={`${isScrolled ? 'bg-aegean-blue text-med-white' : 'bg-med-white text-aegean-blue'} px-8 py-3 text-[10px] font-bold tracking-widest hover:bg-premium-gold hover:text-aegean-blue transition-all duration-500 luxury-shadow`}>
-              RESERVATION
+              RESERVIERUNG
             </button>
           </div>
 
@@ -179,7 +179,7 @@ export default function HomePage() {
           <img 
             src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2000" 
             className="w-full h-full object-cover mix-blend-overlay opacity-30"
-            alt="Hero food photography"
+            alt="Griechische Kulinarik"
           />
           <div className="absolute inset-0 hero-overlay" />
         </div>
@@ -191,7 +191,7 @@ export default function HomePage() {
             className="inline-block border border-sand-beige/30 px-6 py-2 mb-8"
           >
             <p className="text-sand-beige text-[10px] uppercase tracking-[0.4em] font-bold">
-              ESTABLISHED 1993
+              SEIT 1993
             </p>
           </motion.div>
           
@@ -201,7 +201,7 @@ export default function HomePage() {
             transition={{ delay: 0.2 }}
             className="text-white text-6xl md:text-9xl font-serif font-bold mb-10 leading-[0.9] tracking-tighter"
           >
-            The Fine Greek <br /> Kitchen in Bremen.
+            Feine griechische <br /> Küche in Bremen.
           </motion.h2>
 
           <motion.div 
@@ -211,11 +211,11 @@ export default function HomePage() {
             className="flex flex-col md:flex-row gap-8 justify-center items-center"
           >
             <button className="bg-med-white text-aegean-blue px-12 py-5 hover:bg-premium-gold hover:text-aegean-blue transition-all duration-500 uppercase text-[10px] tracking-[0.3em] font-bold luxury-shadow">
-              BOOK YOUR TABLE
+              TISCH RESERVIEREN
             </button>
             <div className="flex items-center gap-4 text-med-white/60">
               <div className="h-px w-8 bg-med-white/30"></div>
-              <p className="italic text-lg font-serif">Authentic Mediterranean fine dining.</p>
+              <p className="italic text-lg font-serif">Authentisches mediterranes Fine Dining.</p>
             </div>
           </motion.div>
         </div>
@@ -255,7 +255,7 @@ export default function HomePage() {
         >
           <img 
             src="/src/assets/images/regenerated_image_1779210671773.png" 
-            alt="Mediterranean Atmosphere"
+            alt="Mediterrane Atmosphäre"
             className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 border-[20px] border-med-white pointer-events-none" />
@@ -267,13 +267,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4 self-start sticky top-32">
-              <p className="text-olive-green uppercase tracking-[0.25em] text-[10px] font-bold mb-6">Signature Highlights</p>
-              <h2 className="text-5xl font-serif font-bold text-aegean-blue mb-8 leading-tight">Masterpieces of the Kitchen</h2>
+              <p className="text-olive-green uppercase tracking-[0.25em] text-[10px] font-bold mb-6">Spezialitäten des Hauses</p>
+              <h2 className="text-5xl font-serif font-bold text-aegean-blue mb-8 leading-tight">Meisterwerke der Küche</h2>
               <p className="text-aegean-blue/60 mb-10 leading-relaxed font-light">
                 Unsere Kochkunst ist eine Hommage an die Ägäis. Wir kombinieren frischeste Zutaten mit modernsten Zubereitungsmethoden.
               </p>
               <Link to="/menu" className="inline-block bg-aegean-blue text-white px-10 py-4 text-[10px] font-bold tracking-[0.2em] hover:bg-premium-gold transition-colors duration-500">
-                DISCOVER THE MENU
+                ZUR SPEISEKARTE
               </Link>
             </div>
 
@@ -445,7 +445,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-aegean-blue/5 rounded-full flex items-center justify-center mx-auto mb-6">
                   <MapPin className="text-premium-gold animate-pulse" size={32} />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-aegean-blue mb-4 uppercase tracking-tighter">Visit Kalymnos</h3>
+                <h3 className="text-2xl font-serif font-bold text-aegean-blue mb-4 uppercase tracking-tighter">Besuchen Sie das Kalymnos</h3>
                 <p className="text-aegean-blue/60 text-sm mb-8 leading-relaxed italic">
                   Grambker Dorfstraße 2, 28719 Bremen
                 </p>
@@ -458,7 +458,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="inline-block bg-aegean-blue text-med-white px-8 py-3 text-[10px] font-bold tracking-[0.2em] hover:bg-premium-gold transition-colors duration-500"
                 >
-                  OPEN IN GOOGLE MAPS
+                  IN GOOGLE MAPS ÖFFNEN
                 </a>
               </div>
             </div>
@@ -548,7 +548,7 @@ export default function HomePage() {
             <a href="#" className="hover:text-premium-gold transition-colors">Datenschutz</a>
             <a href="#" className="hover:text-premium-gold transition-colors">Cookies</a>
           </div>
-          <p className="text-sand-beige italic lowercase normal-case">Designed with Passion for Hellenic Culture</p>
+          <p className="text-sand-beige italic lowercase normal-case">Mit Leidenschaft für die hellenische Kultur entworfen</p>
         </div>
       </footer>
     </div>
