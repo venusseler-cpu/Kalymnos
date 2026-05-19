@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Poppins", "Helvetica Neue", Arial, sans-serif;
+
+  --color-aegean-blue: #123C69;
+  --color-aegean-dark: #0A2544;
+  --color-med-white: #F8F5F0;
+  --color-sand-beige: #D9C7A3;
+  --color-olive-green: #6E7C4F;
+  --color-premium-gold: #C8A96B;
+}
+
+@layer base {
+  body {
+    @apply bg-med-white text-aegean-blue font-sans;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+}
+
+.sophisticated-border {
+  @apply border border-premium-gold/20;
+}
+
+.sophisticated-gradient {
+  background: linear-gradient(135deg, var(--color-aegean-blue) 0%, var(--color-aegean-dark) 100%);
+}
+
+.radial-pattern {
+  background-image: radial-gradient(var(--color-sand-beige) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.luxury-shadow {
+  box-shadow: 0 20px 50px rgba(18, 60, 105, 0.15);
+}
+
+.section-divider {
+  @apply w-24 h-px bg-premium-gold mx-auto my-12;
+}
+
+.hero-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+}

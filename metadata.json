@@ -1,0 +1,6 @@
+{
+  "name": "Kalymnos – The Fine Greek Kitchen",
+  "description": "Premium modern Greek restaurant in Bremen, offering authentic Mediterranean fine dining since 1993.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
