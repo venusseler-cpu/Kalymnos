@@ -131,6 +131,7 @@ export default function HomePage() {
 
           <div className="hidden lg:flex gap-10 items-center">
             <a href="#reviews" className="hover:text-premium-gold transition-colors duration-300">Bewertungen</a>
+            <Link to="/endless-drink" className="hover:text-premium-gold transition-colors duration-300">Gratis Ouzo</Link>
             <a href="#contact" className="hover:text-premium-gold transition-colors duration-300">Kontakt</a>
             <button className={`${isScrolled ? 'bg-aegean-blue text-med-white' : 'bg-med-white text-aegean-blue'} px-8 py-3 text-[10px] font-bold tracking-widest hover:bg-premium-gold hover:text-aegean-blue transition-all duration-500 luxury-shadow`}>
               RESERVIERUNG
